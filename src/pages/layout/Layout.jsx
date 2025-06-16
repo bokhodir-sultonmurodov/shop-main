@@ -64,7 +64,14 @@ const Layout = () => {
                 <BiSolidMessageRounded className="text-2xl" />
                 Groups
               </span>
+              
             </div>
+                <Link
+                  to="/members"
+                  className="block mt-2 bg-green-100 hover:bg-green-200 transition p-3 rounded-xl shadow text-green-800 font-semibold text-center"
+                >
+                  👥 Members
+                </Link>
 
             {showGroups && (
               <div className="absolute top-full mt-2 left-0 w-full bg-white rounded-xl p-3 shadow-xl z-50 flex flex-col gap-2">
@@ -85,12 +92,7 @@ const Layout = () => {
                   </Link>
                 ))}
 
-                <Link
-                  to="/members"
-                  className="block mt-2 bg-green-100 hover:bg-green-200 transition p-3 rounded-xl shadow text-green-800 font-semibold text-center"
-                >
-                  👥 Members
-                </Link>
+            
               </div>
             )}
           </div>
